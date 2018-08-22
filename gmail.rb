@@ -9,7 +9,8 @@ driver.manage.window.maximize
 # sleep = 5 sec
 sleep (2)
 
-# gmail
+# Click the Gmail link from google.co.uk web page
+
 driver.find_element(:link, "Gmail").click()
 
 puts "Test Passed"
