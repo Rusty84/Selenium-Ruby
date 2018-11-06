@@ -6,14 +6,20 @@ driver=Selenium::WebDriver.for:firefox
 driver.navigate.to "https://www.google.co.uk/"
 driver.manage.window.maximize
 
-# sleep = 5 sec
-sleep (5)
+# create a wait with a timeout of 15 seconds
+
+wait = Selenium::WebDriver::Wait.new(timeout: 15)
+
 
 # Click the Gmail link from google.co.uk web page
 
-driver.find_element(:link, "Gmail").click()
-
-#If test passes. Print success message to the terminal.
+link = wait.until {
+    element = driver.find_element(:link, "Gmail")
+    element if element.displayed?
+}
+link.click()
+	
+#If test passes. Print success to the terminal.
 
 puts "Test Passed"
 
