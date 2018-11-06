@@ -10,7 +10,6 @@ driver.manage.window.maximize
 
 wait = Selenium::WebDriver::Wait.new(timeout: 15)
 
-
 # Click the Gmail link from google.co.uk web page
 
 link = wait.until {
