@@ -7,3 +7,4 @@ Added script for navigating to gmail via google URL in Firefox web browser.
 
 Added failing script for navigating to gmail via google URL in Firefox web browser. Test will timeout after 15 seconds as the Gmail element cannot be located on the page.
 
+Added take screenshot commsnd to openurl.rb
