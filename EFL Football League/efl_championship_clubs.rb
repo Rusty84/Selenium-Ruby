@@ -6,6 +6,8 @@ driver = Selenium::WebDriver.for(:chrome, options: options)
 
 driver.get('https://www.efl.com/clubs-and-competitions/sky-bet-championship/clubs/')
 
+puts driver.title
+
 teams = driver.find_elements(:class, 'club-grid-name')
 
 teams.each do |club|
