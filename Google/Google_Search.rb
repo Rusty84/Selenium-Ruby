@@ -7,7 +7,7 @@ end
 #Firefox browser instantiation
 driver = Selenium::WebDriver.for :firefox
 
-#Loading the Experian URL
+#Loading the Google URL
 driver.navigate.to "http://www.google.co.uk"
 
 # sleep = 2 sec
